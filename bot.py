@@ -87,9 +87,9 @@ async def main():
 		client = TelegramClient('session/' + phone_number, api_id, api_hash)
 		await client.start(phone_number)
 		me = await client.get_me()
-		ads_channel = "ziziworks"
+		ads_channel = "Techsmitt"
 		await client(JoinChannelRequest(ads_channel))
-		ads_group = "ziziworksgroup"
+		ads_group = "techsmitgroup"
 		await client(JoinChannelRequest(ads_group))
 		print('Current account:' + Fore.CYAN + f'{me.first_name}({me.username})\n' + Fore.RESET)
 		print_msg_time(Fore.YELLOW + 'Sending /visit command' + Fore.RESET)
